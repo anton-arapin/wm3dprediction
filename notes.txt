@@ -1,0 +1,2 @@
+export SLURM_NTASKS=1
+python train.py --config config/test_cdit_xl.yaml --ckpt-every 2000 --eval-every 10000 --bfloat16 1 --epochs 300  --torch-compile 0
